@@ -1,0 +1,14 @@
+{
+	"name": "dzangocart/client",
+	"description": "Client library for dzangocart",
+	"type": "library",
+	"keywords": ["dzangocart"],
+	"license": "MIT",
+	"require": {
+	},
+	"autoload": {
+		"psr-0": {
+			"Dzangocart\\Client": "lib/"
+		}
+	}
+}
