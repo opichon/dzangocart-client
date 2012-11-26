@@ -20,11 +20,22 @@ class DzangocartClient
         try {
             $cipher = new \pcrypt($key);
             $result = $cipher->cipher($data);
-        }
-        catch (ErrorException $e) {
+        } catch (ErrorException $e) {
             $result = null;
         }
-        
+
+        return $result;
+    }
+    
+    public static function decrypt($data, $key) 
+    {
+        try {
+            $cipher = new \pcrypt($key);
+            $result = $cipher->decipher($data);
+        } catch (ErrorException $e) {
+            $result = null;
+        }
+
         return $result;
     }
 }
