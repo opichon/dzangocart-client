@@ -7,12 +7,14 @@
 	],
 	"license": "MIT",
 	"require": {
-		"php": ">=5.3.0",
-		"opichon/pcrypt": "1.0.*"
+        "php": ">=5.3.3",
+        "pimple/pimple": "1.0.x",
+        "guzzle/guzzle": "3.3.x",
+        "opichon/pcrypt": "1.0.x"
 	},
 	"autoload": {
 		"psr-0": {
-			"Dzangocart\\Client": "lib/"
+			"Dzangocart\\Client": "src/"
 		}
 	},
 	"extra": {

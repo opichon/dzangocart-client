@@ -1,10 +1,12 @@
 <?php
-
 namespace Dzangocart\Client;
 
-class DzangocartClient 
+use \pcrypt;
+use Guzzle\Http\Client as GuzzleClient;
+
+class Client extends GuzzleClient
 {
-    public static function encode($data, $key, $expires) 
+	public function encode($data, $key, $expires) 
     {
         if (!array_key_exists('expires', $data)) {
             $data['expires'] = date('c', time() + $expires);
@@ -12,13 +14,13 @@ class DzangocartClient
         
         $userdata = json_encode($data);
         
-        return self::encrypt($userdata, $key);
+        return $this->encrypt($userdata, $key);
     }
   
-    public static function encrypt($data, $key) 
+    public function encrypt($data, $key) 
     {
         try {
-            $cipher = new \pcrypt($key);
+            $cipher = new pcrypt($key);
             $result = $cipher->cipher($data);
         } catch (ErrorException $e) {
             $result = null;
@@ -27,10 +29,10 @@ class DzangocartClient
         return $result;
     }
     
-    public static function decrypt($data, $key) 
+    public function decrypt($data, $key) 
     {
         try {
-            $cipher = new \pcrypt($key);
+            $cipher = new pcrypt($key);
             $result = $cipher->decipher($data);
         } catch (ErrorException $e) {
             $result = null;
