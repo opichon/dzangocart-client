@@ -1,23 +1,25 @@
 {
-	"name": "dzangocart/client",
-	"description": "Client library for dzangocart",
-	"type": "library",
-	"keywords": [
-		"dzangocart"
-	],
-	"license": "MIT",
-	"require": {
-		"php": ">=5.3.0",
-		"opichon/pcrypt": "1.0.*"
-	},
-	"autoload": {
-		"psr-0": {
-			"Dzangocart\\Client": "lib/"
-		}
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0.x-dev"
-		}
-	}
+    "name": "dzangocart/client",
+    "description": "Client library for dzangocart",
+    "type": "library",
+    "keywords": [
+        "dzangocart"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "pimple/pimple": "1.0.x",
+        "guzzle/guzzle": "3.3.x",
+        "opichon/pcrypt": "1.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dzangocart\\Client": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
