@@ -6,6 +6,11 @@ use Guzzle\Http\Client as GuzzleClient;
 
 class Client extends GuzzleClient
 {
+    public function getOrders()
+    {
+        return array();
+    }
+
 	public function encode($data, $key, $expires) 
     {
         if (!array_key_exists('expires', $data)) {
