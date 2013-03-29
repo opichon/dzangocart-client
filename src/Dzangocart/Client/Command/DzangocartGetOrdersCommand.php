@@ -2,7 +2,7 @@
 
 namespace Dzangocart\Client\Command;
 
-use Dzangocart\OM\DzangocartOrder as Order;
+use Dzangocart\OM\Order;
 
 class DzangocartGetOrdersCommand extends DzangocartCommand
 {
