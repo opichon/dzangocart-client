@@ -31,21 +31,21 @@ class DzangocartClient extends Client
         $description = ServiceDescription::factory(__DIR__ . '/dzangocart.json');
         $client->setDescription($description);
 
-        return $client;        
+        return $client;
     }
 
-	public function encode($data, $key, $expires) 
+    public function encode($data, $key, $expires)
     {
         if (!array_key_exists('expires', $data)) {
             $data['expires'] = date('c', time() + $expires);
         }
-        
+
         $userdata = json_encode($data);
-        
+
         return $this->encrypt($userdata, $key);
     }
-  
-    public function encrypt($data, $key) 
+
+    public function encrypt($data, $key)
     {
         try {
             $cipher = new pcrypt($key);
@@ -56,8 +56,8 @@ class DzangocartClient extends Client
 
         return $result;
     }
-    
-    public function decrypt($data, $key) 
+
+    public function decrypt($data, $key)
     {
         try {
             $cipher = new pcrypt($key);

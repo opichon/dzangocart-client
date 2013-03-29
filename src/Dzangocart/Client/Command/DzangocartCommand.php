@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Dzangocart\Client\Command;
 
@@ -32,7 +32,7 @@ class DzangocartCommand extends OperationCommand
             $encrypted_response = $this->request->getResponse()->getBody(true);
             $decrypted_response = json_decode(
                 $this->getClient()->decrypt(
-                    $encrypted_response, 
+                    $encrypted_response,
                     $this->getClient()->getConfig('secret_key')
                 ),
                 true
