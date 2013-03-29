@@ -10,15 +10,10 @@ class DzangocartCommand extends OperationCommand
     /**
      * {@inheritdoc}
      */
-    public function setClient(ClientInterface $client)
+    protected function build()
     {
-        parent::setClient($client);
-
-//        $this->set(self::RESPONSE_PROCESSING, self::TYPE_RAW);
-
-        $this->set('token', $this->getClient()->getConfig('token'));
-
-        return $this;
+        parent::build();
+        $this->request->getQuery()->set('token', $this->getClient()->getConfig('token'));
     }
 
     /**

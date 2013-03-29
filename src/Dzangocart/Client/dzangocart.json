@@ -4,13 +4,8 @@
     "operations": {
         "getOrders": {
             "httpMethod": "GET",
-            "uri": "orders.json?token={token}",
+            "uri": "orders.json",
             "parameters": {
-                "token": {
-                    "type": "string",
-                    "location": "query",
-                    "required": true
-                }
             },
             "type" : "primitive",
             "class": "Dzangocart\\Client\\Command\\DzangocartGetOrdersCommand"
