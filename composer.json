@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Dzangocart\\Client": "src/"
+            "Dzangocart\\Client": "src/",
             "Dzangocart\\OM": "src/"
         }
     },
