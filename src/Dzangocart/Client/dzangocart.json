@@ -13,7 +13,7 @@
 				}
 			},
 			"type" : "primitive",
-			"class": "Dzangocart\\Client\\Command\\DzangocartCommand"
+			"class": "Dzangocart\\Client\\Command\\DzangocartGetOrdersCommand"
 		}
 	}
 }
