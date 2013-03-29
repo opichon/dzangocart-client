@@ -1,0 +1,19 @@
+{
+	"name": "Dzangocart",
+	"apiVersion": "1.0.0",
+	"operations": {
+		"getOrders": {
+			"httpMethod": "GET",
+			"uri": "orders.json?token={token}",
+			"parameters": {
+				"token": {
+					"type": "string",
+					"location": "query",
+					"required": true
+				}
+			},
+			"type" : "primitive",
+			"class": "Dzangocart\\Client\\Command\\DzangocartCommand"
+		}
+	}
+}
