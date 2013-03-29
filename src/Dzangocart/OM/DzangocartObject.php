@@ -8,9 +8,9 @@ class DzangocartObject
 
     public function __construct(array $data)
     {
-        $this->data = $data;  
+        $this->data = $data;
     }
-    
+    /*
     public function __get($name)
     {
         if (array_key_exists($name, $this->data)) {
@@ -22,4 +22,5 @@ class DzangocartObject
     {
         return $this->data;
     }
+    */
 }

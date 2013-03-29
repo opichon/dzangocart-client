@@ -5,77 +5,93 @@ class Customer extends DzangocartObject
 {
     protected $billing_address;
     protected $shipping_address;
-        
-    public function isCorporate() {
+
+    public function isCorporate()
+    {
         return $this->data['corporate'];
     }
-    
-    public function getSalutation() {
+
+    public function getSalutation()
+    {
         return $this->data['salutation'];
     }
-    
-    public function getName() {
+
+    public function getName()
+    {
         return implode(' ' , array($this->getSalutation(), $this->getGivenNames(), $this->getSurname()));
     }
-    
-    public function getCompany() {
+
+    public function getCompany()
+    {
         return $this->dat['company'];
     }
-    
-    public function getSurname() {
+
+    public function getSurname()
+    {
         return $this->data['surname'];
     }
-    
-    public function getGivenNames() {
+
+    public function getGivenNames()
+    {
         return $this->data['given_names'];
     }
-    
-    public function getCode() {
+
+    public function getCode()
+    {
         return $this->data['code'];
     }
-    
-    public function getEmail() {
+
+    public function getEmail()
+    {
         return $this->data['email'];
     }
-    
-    public function getTelephone() {
+
+    public function getTelephone()
+    {
         return $this->data['telephone'];
     }
-    
-    public function getFax() {
+
+    public function getFax()
+    {
         return $this->data['fax'];
     }
-    
-    public function getMobile() {
+
+    public function getMobile()
+    {
         return $this->data['mobile'];
     }
-    
-    public function shipToBillingAddress() {
+
+    public function shipToBillingAddress()
+    {
         return $this->data['ship_to_billing_address'];
     }
-    
-    public function getBillingAddress() {
+
+    public function getBillingAddress()
+    {
         if (!$this->billing_address) {
             $cls = $this->getAddressClass();
             $this->billing_address = new $cls($this->data['billing_address']);
         }
+
         return $this->billing_address;
     }
-    
-    public function getShippingAddress() {
+
+    public function getShippingAddress()
+    {
         if ($this->shipToBillingAddress()) {
             return $this->getBillingAddress();
         }
-        
+
         if (!$this->shipping_address) {
             $cls = $this->getAddressClass();
             $this->shipping_address = new $cls($this->data['shipping_address']);
         }
-        
+
         return $this->shipping_address;
     }
-    
-    protected function getAddressClass() {
+
+    protected function getAddressClass()
+    {
         return 'Dzangocart\OM\Address';
-    }   
+    }
 }
