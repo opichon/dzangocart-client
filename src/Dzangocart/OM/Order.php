@@ -117,19 +117,17 @@ class Order extends DzangocartObject
     
         return $this->items;
     }
-    
-    public function getActionsPartial() {
-        return 'dzangocart/order_actions';
+
+    public function getAffiliateId()
+    {
+        return $this->data['affiliate_id'];
     }
 
-    public function getDetailsPartial() {
-        return 'dzangocart/order_details';
+    public function getAffiliate()
+    {
+        return $this->getAffiliateId();
     }
 
-    public function getBatchActionPartial() {
-        return 'dzangocart/order_batch_action';
-    }
-    
     public function process($confirm = false) {
         if ($confirm) {
             $this->confirm();

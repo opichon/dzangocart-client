@@ -15,8 +15,8 @@ class DzangocartGetOrdersCommand extends DzangocartCommand
 
         $orders = array();
 
-        foreach ($list as $item) {
-            $orders[] = new Order($item);
+        foreach ($list as $order) {
+            $orders[] = new Order($order);
         }
 
         $this->result['list'] = $orders;
