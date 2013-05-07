@@ -8,7 +8,7 @@
             "parameters": {
             },
             "type" : "primitive",
-            "class": "Dzangocart\\Client\\Command\\DzangocartGetOrdersCommand"
+            "class": "Dzangocart\\Client\\Command\\GetOrdersCommand"
         },
         "getPurchases": {
             "httpMethod": "GET",
