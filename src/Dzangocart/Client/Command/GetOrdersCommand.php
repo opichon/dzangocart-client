@@ -4,7 +4,7 @@ namespace Dzangocart\Client\Command;
 
 use Dzangocart\OM\Order;
 
-class DzangocartGetOrdersCommand extends DzangocartCommand
+class GetOrdersCommand extends AbstractCommand
 {
 
     public function process()
