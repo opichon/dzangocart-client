@@ -22,7 +22,7 @@ abstract class AbstractCommand extends OperationCommand
     protected function process()
     {
         if ($this->get(self::RESPONSE_PROCESSING) == self::TYPE_RAW) {
-            $this->result = $this->request->getResponse();
+            $this->result = json_decode($this->request->getResponse()->getBody(true), true);
         }
         else {
             $response = $this->request->getResponse()->getBody(true);

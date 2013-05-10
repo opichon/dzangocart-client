@@ -2,9 +2,11 @@
 
 namespace Dzangocart\OM;
 
-class Purchase extends DzangocartObject
+use \DateTime;
+
+class Sale extends DzangocartObject
 {
-    const CSS_CLASS = 'purchase';
+    const CSS_CLASS = 'sale';
     const CSS_CLASS_CANCELLED = 'cancelled';
     const CSS_CLASS_UNPAID = 'unpaid';
     const CSS_CLASS_PAID = 'paid';
@@ -133,6 +135,11 @@ class Purchase extends DzangocartObject
         return $this->data['affiliate_id'];
     }
 
+    public function getAffiliate()
+    {
+        return $this->getAffiliateId();
+    }
+
     public function getCode()
     {
         return $this->data['code'];
@@ -194,8 +201,13 @@ class Purchase extends DzangocartObject
 
     public function process() {}
 
+    protected function getCustomerClass()
+    {
+        return 'Dzangocart\OM\Customer';
+    }
+
     protected function getSubItemClass($category)
     {
-        return 'Dzangocart\OM\Purchase';
+        return 'Dzangocart\OM\Sale';
     }
 }
