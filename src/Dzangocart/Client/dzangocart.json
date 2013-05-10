@@ -83,62 +83,6 @@
             },
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetSalesCommand"
-        },
-        "getPurchases": {
-            "httpMethod": "GET",
-            "uri": "sales.json",
-            "parameters": {
-                "customer": {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"
-                },
-                "affiliate_id" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"                    
-                },
-                "test": {
-                    "type": "boolean",
-                    "required": true,
-                    "default": false,
-                    "location": "query"                                        
-                },
-                "sort_by" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"                    
-                },
-                "list_by" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"                    
-                },
-                "affiliate_id" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"                    
-                },
-                "limit" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"                    
-                },
-                "offset" : {
-                    "type": "string",
-                    "required": false,
-                    "default": 0,
-                    "location": "query"                    
-                }
-            },
-            "type": "primitive",
-            "class": "Dzangocart\\Client\\Command\\GetPurchasesCommand"
         }
     }
 }
