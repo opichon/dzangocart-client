@@ -23,8 +23,8 @@ class GetSalesCommand extends AbstractCommand
 
         $sales = array();
 
-        foreach ($list as $sale) {
-            $sales[] = new Sale($sale);
+        foreach ($list as $index => $sale) {
+            $sales[$index] = new Sale($sale);
         }
 
         $this->result['results'] = $sales;
