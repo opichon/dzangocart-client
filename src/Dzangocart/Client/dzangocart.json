@@ -10,25 +10,19 @@
                     "type": "boolean",
                     "required": true,
                     "default": false,
-                    "location": "query"                                        
-                },
-                "sort_by" : {
-                    "type": "string",
-                    "required": false,
-                    "default": "date",
-                    "location": "query"                    
+                    "location": "query"                     
                 },
                 "limit" : {
                     "type": "string",
                     "required": false,
                     "default": 50,
-                    "location": "query"                    
+                    "location": "query"
                 },
                 "offset" : {
                     "type": "string",
                     "required": false,
                     "default": 0,
-                    "location": "query"                    
+                    "location": "query"
                 }                
             },
             "type" : "primitive",
@@ -48,43 +42,43 @@
                     "type": "string",
                     "required": false,
                     "default": null,
-                    "location": "query"                    
+                    "location": "query"
                 },
                 "test": {
                     "type": "boolean",
                     "required": true,
                     "default": false,
-                    "location": "query"                                        
+                    "location": "query"
                 },
                 "sort_by" : {
                     "type": "string",
                     "required": false,
                     "default": null,
-                    "location": "query"                    
+                    "location": "query"
                 },
                 "list_by" : {
                     "type": "string",
                     "required": false,
                     "default": null,
-                    "location": "query"                    
+                    "location": "query"
                 },
                 "affiliate_id" : {
                     "type": "string",
                     "required": false,
                     "default": null,
-                    "location": "query"                    
+                    "location": "query"
                 },
                 "limit" : {
                     "type": "string",
                     "required": false,
                     "default": null,
-                    "location": "query"                    
+                    "location": "query"
                 },
                 "offset" : {
                     "type": "string",
                     "required": false,
                     "default": 0,
-                    "location": "query"                    
+                    "location": "query"
                 }
             },
             "type": "primitive",
