@@ -162,7 +162,7 @@ class Sale extends DzangocartObject
             $this->customer = new $cls($this->data['customer']);
         }
 
-    return $this->customer;
+        return $this->customer;
     }
 
     public function getSubItems()

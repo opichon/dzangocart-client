@@ -21,15 +21,15 @@ class Customer extends DzangocartObject
         $tokens = array();
 
         if ($salutation = $this->getSalutation()) {
-            $array[] = $salutation;
+            $tokens[] = $salutation;
         }
 
         if ($given_names = $this->getGivenNames()) {
-            $array[] = $given_names;
+            $tokens[] = $given_names;
         }
 
         if ($surname = $this->getSurname()) {
-            $array[] = $surname;
+            $tokens[] = $surname;
         }
 
         return implode(' ' , $tokens);
