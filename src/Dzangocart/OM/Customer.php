@@ -18,12 +18,26 @@ class Customer extends DzangocartObject
 
     public function getName()
     {
-        return implode(' ' , array($this->getSalutation(), $this->getGivenNames(), $this->getSurname()));
+        $tokens = array();
+
+        if ($salutation = $this->getSalutation()) {
+            $tokens[] = $salutation;
+        }
+
+        if ($given_names = $this->getGivenNames()) {
+            $tokens[] = $given_names;
+        }
+
+        if ($surname = $this->getSurname()) {
+            $tokens[] = $surname;
+        }
+
+        return implode(' ' , $tokens);
     }
 
     public function getCompany()
     {
-        return $this->dat['company'];
+        return $this->data['company'];
     }
 
     public function getSurname()
