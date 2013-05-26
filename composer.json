@@ -5,6 +5,11 @@
     "keywords": [
         "dzangocart"
     ],
+    "authors": [
+        {
+            "name": "Olivier Pichon",
+            "email": "ofpichon@gmail.com",
+        }
     "license": "MIT",
     "require": {
         "php": ">=5.3.3",
