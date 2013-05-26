@@ -6,11 +6,25 @@
             "httpMethod": "GET",
             "uri": "orders.json",
             "parameters": {
-                "test": {
-                    "type": "boolean",
-                    "required": true,
-                    "default": false,
-                    "location": "query"                     
+                "affiliate": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "customer": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "date_from": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "date_to": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
                 },
                 "limit" : {
                     "type": "string",
@@ -18,12 +32,33 @@
                     "default": 50,
                     "location": "query"
                 },
+                "list_by": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
                 "offset" : {
                     "type": "string",
                     "required": false,
                     "default": 0,
                     "location": "query"
-                }                
+                },
+                "search": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "sort_by": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "test": {
+                    "type": "boolean",
+                    "required": true,
+                    "default": false,
+                    "location": "query"                     
+                }
             },
             "type" : "primitive",
             "class": "Dzangocart\\Client\\Command\\GetOrdersCommand"
