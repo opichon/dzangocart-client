@@ -98,6 +98,18 @@ class Order extends DzangocartObject
         return $this->data['amount'];
     }
     
+    public function getAmountExcl() {
+        return $this->data['amount_excl_tax'];
+    }
+    
+    public function getAmountIncl() {
+        return $this->data['amount_incl_tax'];
+    }
+    
+    public function getTaxAmount() {
+        return $this->data['amount_tax'];
+    }
+    
     public function getAmountPaid() {
         return $this->data['amount_paid'];
     }
