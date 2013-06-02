@@ -17,7 +17,7 @@ class Order extends DzangocartObject
     protected $items;
     
     public function isTest() {
-        return $this->data['test'];
+        return $this->data['test'] ? true : false;
     }
 
     public function isCancelled() {
