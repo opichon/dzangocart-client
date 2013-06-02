@@ -1,0 +1,27 @@
+{
+    "name": "dzangocart/client",
+    "description": "Client library for dzangocart",
+    "type": "library",
+    "keywords": [
+        "dzangocart"
+    ],
+    "authors": [
+        {
+            "name": "Olivier Pichon",
+            "email": "ofpichon@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "pimple/pimple": "1.0.x",
+        "guzzle/guzzle": "3.3.x",
+        "opichon/pcrypt": "1.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dzangocart\\Client": "src/",
+            "Dzangocart\\OM": "src/"
+        }
+    }
+}

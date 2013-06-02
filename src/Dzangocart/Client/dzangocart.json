@@ -1,0 +1,123 @@
+{
+    "name": "Dzangocart",
+    "apiVersion": "1.0.0",
+    "operations": {
+        "getOrders": {
+            "httpMethod": "GET",
+            "uri": "orders.json",
+            "parameters": {
+                "affiliate": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "customer": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "date_from": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "date_to": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "limit" : {
+                    "type": ["integer", "string"],
+                    "required": false,
+                    "default": 50,
+                    "location": "query"
+                },
+                "list_by": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "offset" : {
+                    "type": ["integer", "string"],
+                    "required": false,
+                    "default": 0,
+                    "location": "query"
+                },
+                "search": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "sort_by": {
+                    "type": "array",
+                    "required": false,
+                    "location": "query"
+                },
+                "test": {
+                    "type": ["boolean", "integer", "string"],
+                    "required": true,
+                    "default": false,
+                    "location": "query"                     
+                }
+            },
+            "type" : "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetOrdersCommand"
+        },
+        "getSales": {
+            "httpMethod": "GET",
+            "uri": "purchase/list.json",
+            "parameters": {
+                "customer": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "affiliate_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "test": {
+                    "type": "boolean",
+                    "required": true,
+                    "default": false,
+                    "location": "query"
+                },
+                "sort_by" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "list_by" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "affiliate_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "limit" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "offset" : {
+                    "type": "string",
+                    "required": false,
+                    "default": 0,
+                    "location": "query"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetSalesCommand"
+        }
+    }
+}
