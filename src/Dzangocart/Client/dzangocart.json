@@ -67,37 +67,13 @@
             "httpMethod": "GET",
             "uri": "purchase/list.json",
             "parameters": {
+                "affiliate_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
                 "customer": {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"
-                },
-                "affiliate_id" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"
-                },
-                "test": {
-                    "type": "boolean",
-                    "required": true,
-                    "default": false,
-                    "location": "query"
-                },
-                "sort_by" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"
-                },
-                "list_by" : {
-                    "type": "string",
-                    "required": false,
-                    "default": null,
-                    "location": "query"
-                },
-                "affiliate_id" : {
                     "type": "string",
                     "required": false,
                     "default": null,
@@ -109,10 +85,28 @@
                     "default": null,
                     "location": "query"
                 },
+                "list_by" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
                 "offset" : {
                     "type": "string",
                     "required": false,
                     "default": 0,
+                    "location": "query"
+                },
+                "sort_by" : {
+                    "type": "array",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "test": {
+                    "type": "boolean",
+                    "required": true,
+                    "default": false,
                     "location": "query"
                 }
             },
