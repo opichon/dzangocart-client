@@ -73,10 +73,44 @@
                     "default": null,
                     "location": "query"
                 },
+                "category": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "code": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "code_generic": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
                 "customer": {
                     "type": "string",
                     "required": false,
                     "default": null,
+                    "location": "query"
+                },
+                "date_from": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "date_to": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "include_subcategories": {
+                    "type": "boolean",
+                    "required": false,
+                    "default": false,
                     "location": "query"
                 },
                 "limit" : {
@@ -86,6 +120,12 @@
                     "location": "query"
                 },
                 "list_by" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "name": {
                     "type": "string",
                     "required": false,
                     "default": null,
