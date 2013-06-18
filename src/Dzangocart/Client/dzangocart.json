@@ -63,6 +63,19 @@
             "type" : "primitive",
             "class": "Dzangocart\\Client\\Command\\GetOrdersCommand"
         },
+        "getOrder": {
+            "httpMethod": "GET",
+            "uri": "order/get.json",
+            "parameters": {
+                "id": {
+                    "type": ["integer", "string"],
+                    "required": true,
+                    "location": "query"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetOrderCommand"
+        },
         "getSales": {
             "httpMethod": "GET",
             "uri": "purchase/list.json",
