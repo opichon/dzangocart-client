@@ -22,4 +22,9 @@ class DzangocartObject
     {
         return $this->data;
     }
+
+    public function toArray()
+    {
+        return $this->data;
+    }
 }

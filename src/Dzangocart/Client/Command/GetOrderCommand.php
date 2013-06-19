@@ -19,8 +19,8 @@ class GetOrderCommand extends AbstractCommand
     {
         parent::process();
 
-//        $order = new Order($this['result']);
+        $order = new Order($this->result);
 
-//        $this->result = $order;
+        $this->result = $order;
     }
 }

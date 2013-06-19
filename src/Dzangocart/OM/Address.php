@@ -1,6 +1,6 @@
 <?php
 
-namespace Dzangocart\Object;
+namespace Dzangocart\OM;
 
 class Address extends DzangocartObject
 {

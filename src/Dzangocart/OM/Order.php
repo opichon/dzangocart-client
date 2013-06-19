@@ -169,6 +169,6 @@ class Order extends DzangocartObject
     }
 
     protected function getItemClass($category) {
-        return 'Dzangocart\OM\Purchase';
+        return 'Dzangocart\OM\Sale';
     }
 }
