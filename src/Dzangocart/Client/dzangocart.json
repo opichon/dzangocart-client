@@ -192,7 +192,7 @@
                     "default": null,
                     "location": "query"
                 },
-                "name": {
+                "merchant_id": {
                     "type": "string",
                     "required": false,
                     "default": null,
