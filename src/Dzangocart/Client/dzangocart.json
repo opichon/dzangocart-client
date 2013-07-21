@@ -219,6 +219,54 @@
             },
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetSipsCommand"
-        }        
+        },
+        "getDirectPayments": {
+            "httpMethod": "GET",
+            "uri": "po/transactions.json",
+            "parameters": {
+                "date_from": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "date_to": {
+                    "type": "string",
+                    "required": false,
+                    "location": "query"
+                },
+                "limit" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "list_by" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "offset" : {
+                    "type": "string",
+                    "required": false,
+                    "default": 0,
+                    "location": "query"
+                },
+                "sort_by" : {
+                    "type": "array",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "test": {
+                    "type": "boolean",
+                    "required": true,
+                    "default": false,
+                    "location": "query"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetDirectPaymentsCommand"
+        }
     }
 }
