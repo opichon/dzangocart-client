@@ -138,6 +138,11 @@ class Order extends DzangocartObject
         return $this->data['amount_paid'];
     }
 
+    public function isPaid()
+    {
+        return $this->getAmountIncl() == $this->getAmountPaid();
+    }
+
     public function getAmountOutstanding()
     {
         return $this->data['amount_incl_tax'] - $this->data['amount_paid'];
