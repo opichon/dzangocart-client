@@ -2,7 +2,6 @@
 
 namespace Dzangocart\Client\Command;
 
-use Guzzle\Service\ClientInterface;
 use Guzzle\Service\Command\OperationCommand;
 
 abstract class AbstractCommand extends OperationCommand
@@ -23,8 +22,7 @@ abstract class AbstractCommand extends OperationCommand
     {
         if ($this->get(self::RESPONSE_PROCESSING) == self::TYPE_RAW) {
             $this->result = json_decode($this->request->getResponse()->getBody(true), true);
-        }
-        else {
+        } else {
             $response = $this->request->getResponse()->getBody(true);
 
             $decrypted_response = json_decode(
@@ -34,7 +32,7 @@ abstract class AbstractCommand extends OperationCommand
                 ),
                 true
             );
-        
+
             $this->result = $decrypted_response;
         }
     }
