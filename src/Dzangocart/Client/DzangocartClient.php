@@ -24,10 +24,10 @@ class DzangocartClient extends Client
             'scheme' => 'http'
         );
 
-        $required = array('base_url', 'token');
+        $required = array('api_url', 'token');
         $config = Collection::fromConfig($config, $defaults, $required);
 
-        $client = new self($config->get('base_url'), $config);
+        $client = new self($config->get('api_url'), $config);
         $description = ServiceDescription::factory(__DIR__ . '/dzangocart.json');
         $client->setDescription($description);
 
