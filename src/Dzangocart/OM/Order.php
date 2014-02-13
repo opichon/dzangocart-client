@@ -17,6 +17,11 @@ class Order extends DzangocartObject
     protected $items;
     protected $taxes = array();
 
+    public function getId()
+    {
+        return $this->data['id'];
+    }
+
     public function isTest()
     {
         return $this->data['test'] ? true : false;
@@ -182,41 +187,6 @@ class Order extends DzangocartObject
     public function getAffiliate()
     {
         return $this->getAffiliateId();
-    }
-
-    public function process($confirm = false)
-    {
-        if ($confirm) {
-            $this->confirm();
-        }
-
-        $this->generateInvoice();
-        $this->doProcessOrder();
-        $this->processItems();
-    }
-
-    protected function doProcessOrder()
-    {
-
-    }
-
-    protected function confirm()
-    {
-
-    }
-
-    protected function generateInvoice()
-    {
-
-    }
-
-    protected function processItems()
-    {
-        $items = $this->getItems();
-
-        foreach ($items as $item) {
-            $item->process();
-        }
     }
 
     protected function getCustomerClass()
