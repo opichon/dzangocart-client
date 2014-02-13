@@ -1,4 +1,5 @@
 <?php
+
 namespace Dzangocart\Client;
 
 use \pcrypt;
