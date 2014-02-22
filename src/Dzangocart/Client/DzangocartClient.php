@@ -35,7 +35,7 @@ class DzangocartClient extends Client
         return $client;
     }
 
-    public function encode($data, $key, $expires)
+    public function encode($data, $key, $expires = 3600000)
     {
         if (!array_key_exists('expires', $data)) {
             $data['expires'] = date('c', time() + $expires);
