@@ -15,8 +15,12 @@ class GetOrdersCommand extends AbstractCommand
 
         $orders = array();
 
+        $config = $this->getClient()->getConfig();
+
+        $cls = $config['om_classes']['order'];
+
         foreach ($list as $order) {
-            $orders[] = new Order($order);
+            $orders[] = new $cls($order);
         }
 
         $this->result['list'] = $orders;
