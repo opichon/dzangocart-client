@@ -19,7 +19,11 @@ class GetOrderCommand extends AbstractCommand
     {
         parent::process();
 
-        $order = new Order($this->result);
+        $config = $this->getClient()->getConfig();
+
+        $cls = $config['om_classes']['order'];
+
+        $order = new $cls($this->result);
 
         $this->result = $order;
     }

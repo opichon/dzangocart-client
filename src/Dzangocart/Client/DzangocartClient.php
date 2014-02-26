@@ -22,7 +22,13 @@ class DzangocartClient extends Client
     public static function factory($config = array())
     {
         $defaults = array(
-            'scheme' => 'http'
+            'scheme' => 'http',
+            'om_classes' => array(
+                'order' => 'Dzangocart\OM\Order',
+                'sale' => 'Dzangocart\OM\Sale',
+                'customer' => 'Dzangocart\OM\Customer',
+                'address' => 'Dzangocart\OM\Address'
+            )
         );
 
         $required = array('api_url', 'token');
