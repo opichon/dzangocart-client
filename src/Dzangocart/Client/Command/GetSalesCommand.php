@@ -23,14 +23,35 @@ class GetSalesCommand extends AbstractCommand
 
         $sales = array();
 
-        $config = $this->getClient()->getConfig();
-
-        $cls = $config['om_classes']['sale'];
-
         foreach ($list as $index => $sale) {
+
+            $cls = $this->getSaleClass($sale);
+
             $sales[$index] = new $cls($sale);
         }
 
         $this->result['results'] = $sales;
+    }
+
+    protected function getSaleClass($sale)
+    {
+        $config = $this->getClient()->getConfig()['om_classes']['sale'];
+
+        if (is_array($config)) {
+
+            $category = $sale['category'];
+
+            if (array_key_exists($category, $config)) {
+                $cls = $config[$category];
+            } elseif (array_key_exists('default', $classes)) {
+                $cls = $config['default'];
+            } else {
+                $cls = 'Dzangocart\OM\Sale';
+            }
+        } else {
+            $cls = $config;
+        }
+
+        return $cls;
     }
 }
