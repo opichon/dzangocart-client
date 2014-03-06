@@ -23,8 +23,12 @@ class GetSalesCommand extends AbstractCommand
 
         $sales = array();
 
+        $config = $this->getClient()->getConfig();
+
+        $cls = $config['om_classes']['sale'];
+
         foreach ($list as $index => $sale) {
-            $sales[$index] = new Sale($sale);
+            $sales[$index] = new $cls($sale);
         }
 
         $this->result['results'] = $sales;
