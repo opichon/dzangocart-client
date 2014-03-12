@@ -39,7 +39,7 @@ class Order extends DzangocartObject
 
     public function isCredit()
     {
-        return $this->data['credit'];
+        return $this->data['credit'] || $this->getAmountIncl() < 0;
     }
 
     public function getCssClass()
