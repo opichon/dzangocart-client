@@ -25,18 +25,18 @@ class GetSalesCommand extends AbstractCommand
 
         foreach ($list as $index => $_sales) {
 
-            if (is_array($_sales)) {
-                foreach ($_sales as $sale) {
-                    $cls = $this->getSaleClass($sale);
-
-                    $sales[$index] = new $cls($sale);
-                }
-            } else {
+            if (array_key_exists('id', $_sales)) {
                 $sale = $_sales;
 
                 $cls = $this->getSaleClass($sale);
 
                 $sales[$index] = new $cls($sale);
+            } else {
+                foreach ($_sales as $sale) {
+                    $cls = $this->getSaleClass($sale);
+
+                    $sales[$index] = new $cls($sale);
+                }
             }
         }
 

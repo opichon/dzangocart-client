@@ -57,7 +57,7 @@
                     "type": ["boolean", "integer", "string"],
                     "required": true,
                     "default": false,
-                    "location": "query"                     
+                    "location": "query"
                 }
             },
             "type" : "primitive",
@@ -129,7 +129,7 @@
                 "limit" : {
                     "type": "string",
                     "required": false,
-                    "default": null,
+                    "default": 50,
                     "location": "query"
                 },
                 "list_by" : {
@@ -183,7 +183,7 @@
                 "limit" : {
                     "type": "string",
                     "required": false,
-                    "default": null,
+                    "default": 50,
                     "location": "query"
                 },
                 "list_by" : {
@@ -237,7 +237,7 @@
                 "limit" : {
                     "type": "string",
                     "required": false,
-                    "default": null,
+                    "default": 50,
                     "location": "query"
                 },
                 "list_by" : {
