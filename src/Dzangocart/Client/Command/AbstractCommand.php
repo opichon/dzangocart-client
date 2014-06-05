@@ -12,7 +12,7 @@ abstract class AbstractCommand extends OperationCommand
     protected function build()
     {
         parent::build();
-        $this->request->getQuery()->set('token', $this->getClient()->getConfig('token'));
+        $this->request->getQuery()->set('apikey', $this->getClient()->getConfig('token'));
     }
 
     /**

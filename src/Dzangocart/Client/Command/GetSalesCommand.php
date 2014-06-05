@@ -19,7 +19,7 @@ class GetSalesCommand extends AbstractCommand
     {
         parent::process();
 
-        $list = $this->result['results'];
+        $list = $this->result['data'];
 
         $sales = array();
 

@@ -78,7 +78,7 @@
         },
         "getSales": {
             "httpMethod": "GET",
-            "uri": "purchase/list.json",
+            "uri": "sales",
             "parameters": {
                 "affiliate_id" : {
                     "type": "string",
