@@ -130,6 +130,11 @@ class Sale extends DzangocartObject
         return sprintf('%s, %s', $this->data['customer']['surname'], $this->data['customer']['given_names']);
     }
 
+    public function getCustomerFullName()
+    {
+        return $this->data['customer']['name'];
+    }
+
     public function getAffiliateId()
     {
         return $this->data['affiliate_id'];
