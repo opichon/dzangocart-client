@@ -7,11 +7,20 @@ use Dzangocart\OM\Order;
 class GetOrdersCommand extends AbstractCommand
 {
 
+    /**
+     * {@inheritdoc}
+     */
+    protected function build()
+    {
+        parent::build();
+        $this->set('command.response_processing', 'raw');
+    }
+
     public function process()
     {
         parent::process();
 
-        $list = $this->result['list'];
+        $list = $this->result['data'];
 
         $orders = array();
 
