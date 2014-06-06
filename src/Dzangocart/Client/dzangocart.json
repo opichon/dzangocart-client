@@ -65,7 +65,7 @@
         },
         "getOrder": {
             "httpMethod": "GET",
-            "uri": "order/get.json",
+            "uri": "order",
             "parameters": {
                 "id": {
                     "type": ["integer", "string"],
