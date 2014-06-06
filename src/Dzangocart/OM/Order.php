@@ -37,6 +37,11 @@ class Order extends DzangocartObject
         return $this->data['cancellation'];
     }
 
+    public function getCustomerFullName()
+    {
+        return $this->data['customer']['name'];
+    }
+
     public function isCredit()
     {
         return $this->data['credit'] || $this->getAmountIncl() < 0;
