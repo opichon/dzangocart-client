@@ -129,7 +129,7 @@
                 "length" : {
                     "type": "string",
                     "required": false,
-                    "default": 50,
+                    "default": 10,
                     "location": "query"
                 },
                 "list_by" : {
@@ -144,7 +144,7 @@
                     "default": null,
                     "location": "query"
                 },
-                "offset" : {
+                "start" : {
                     "type": "string",
                     "required": false,
                     "default": 0,
