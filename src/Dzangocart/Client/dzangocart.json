@@ -126,7 +126,7 @@
                     "default": false,
                     "location": "query"
                 },
-                "limit" : {
+                "length" : {
                     "type": "string",
                     "required": false,
                     "default": 50,
