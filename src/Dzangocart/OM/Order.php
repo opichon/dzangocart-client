@@ -163,7 +163,7 @@ class Order extends DzangocartObject
         if (!$this->items) {
             $this->items = array();
 
-            foreach ($this->data['items'] as $item_data) {
+            foreach ($this->data['items']['data'] as $item_data) {
                 $cls = $this->getItemClass($item_data['category']);
                 // When returning an order, Dzangocart only supplies the customer data at order level, not item level.
                 $item_data['customer'] = $this->customer;
