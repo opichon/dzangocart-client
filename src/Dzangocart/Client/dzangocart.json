@@ -126,7 +126,7 @@
                     "default": false,
                     "location": "query"
                 },
-                "length" : {
+                "limit" : {
                     "type": "string",
                     "required": false,
                     "default": 10,
@@ -144,7 +144,7 @@
                     "default": null,
                     "location": "query"
                 },
-                "start" : {
+                "offset" : {
                     "type": "string",
                     "required": false,
                     "default": 0,
