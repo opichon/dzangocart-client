@@ -270,7 +270,11 @@
         },
         "getCatalogue": {
             "httpMethod": "GET",
-            "uri": "catalogue"
+            "uri": "catalogue",
+            "parameters": {
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetCatalogueCommand"
         }
     }
 }
