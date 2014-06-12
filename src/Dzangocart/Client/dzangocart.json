@@ -267,6 +267,32 @@
             },
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetDirectPaymentsCommand"
+        },
+        "getCatalogue": {
+            "httpMethod": "GET",
+            "uri": "catalogue",
+            "parameters": {
+                "name": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "price": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "currency": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetCatalogueCommand"
         }
     }
 }
