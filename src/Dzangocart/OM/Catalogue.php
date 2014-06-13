@@ -34,6 +34,11 @@ class Catalogue extends DzangocartObject
         return $this->data['categories'];
     }
 
+    public function getCode()
+    {
+        return $this->data['code'];
+    }
+
     public function hasChildren()
     {
         return $this->getCategory() ? true : false;  
