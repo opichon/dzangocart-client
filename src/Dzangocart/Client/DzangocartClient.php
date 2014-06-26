@@ -27,9 +27,7 @@ class DzangocartClient extends Client
                 'order' => 'Dzangocart\OM\Order',
                 'sale' => 'Dzangocart\OM\Sale',
                 'customer' => 'Dzangocart\OM\Customer',
-                'address' => 'Dzangocart\OM\Address',
-                'category' => 'Dzangocart\OM\Category',
-                'catalogue' => 'Dzangocart\OM\Catalogue'
+                'address' => 'Dzangocart\OM\Address'
             )
         );
 
