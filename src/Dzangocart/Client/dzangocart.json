@@ -222,7 +222,7 @@
         },
         "getDirectPayments": {
             "httpMethod": "GET",
-            "uri": "po/transactions.json",
+            "uri": "payments",
             "parameters": {
                 "date_from": {
                     "type": "string",
