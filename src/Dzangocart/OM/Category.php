@@ -4,27 +4,27 @@ namespace Dzangocart\OM;
 
 class Category extends DzangocartObject
 {
-    public function gettaxIncluded()
+    public function getTaxIncluded()
     {
         return (bool)$this->data['taxIncluded'];
     }
 
-    public function getexport()
+    public function getExport()
     {
         return (bool)$this->data['export'];
     }
 
-    public function getshipping()
+    public function getShipping()
     {
         return (bool)$this->data['shipping'];
     }
 
-    public function getdownload()
+    public function getDownload()
     {
         return (bool)$this->data['download'];
     }
 
-    public function getpack()
+    public function getPack()
     {
         return (bool)$this->data['pack'];
     }
