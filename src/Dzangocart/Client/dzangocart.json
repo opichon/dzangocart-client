@@ -49,7 +49,7 @@
                     "location": "query"
                 },
                 "sort_by": {
-                    "type": "array",
+                    "type": "string",
                     "required": false,
                     "location": "query"
                 },
@@ -151,7 +151,7 @@
                     "location": "query"
                 },
                 "sort_by" : {
-                    "type": "array",
+                    "type": "string",
                     "required": false,
                     "default": null,
                     "location": "query"
@@ -205,7 +205,7 @@
                     "location": "query"
                 },
                 "sort_by" : {
-                    "type": "array",
+                    "type": "string",
                     "required": false,
                     "default": null,
                     "location": "query"
@@ -253,7 +253,7 @@
                     "location": "query"
                 },
                 "sort_by" : {
-                    "type": "array",
+                    "type": "string",
                     "required": false,
                     "default": null,
                     "location": "query"
@@ -320,7 +320,7 @@
                     "location": "query"
                 },
                 "sort_by" : {
-                    "type": "array",
+                    "type": "string",
                     "required": false,
                     "default": null,
                     "location": "query"
