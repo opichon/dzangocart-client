@@ -157,8 +157,8 @@
                     "location": "query"
                 },
                 "test": {
-                    "type": "boolean",
-                    "required": true,
+                    "type": ["boolean", "integer", "string"],
+                    "required": false,
                     "default": false,
                     "location": "query"
                 }
@@ -211,8 +211,8 @@
                     "location": "query"
                 },
                 "test": {
-                    "type": "boolean",
-                    "required": true,
+                    "type": ["boolean", "integer", "string"],
+                    "required": false,
                     "default": false,
                     "location": "query"
                 }
@@ -259,7 +259,7 @@
                     "location": "query"
                 },
                 "test": {
-                    "type": "boolean",
+                    "type": ["boolean", "integer", "string"],
                     "required": true,
                     "default": false,
                     "location": "query"
@@ -326,7 +326,7 @@
                     "location": "query"
                 },
                 "test": {
-                    "type": "boolean",
+                    "type": ["boolean", "integer", "string"],
                     "required": true,
                     "default": false,
                     "location": "query"
