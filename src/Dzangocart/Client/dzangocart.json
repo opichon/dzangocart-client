@@ -287,7 +287,7 @@
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetCatalogueCommand"
         },
-        "updateCategory": {
+        "setCategory": {
             "httpMethod": "POST",
             "uri": "category/update",
             "parameters": {
@@ -304,7 +304,7 @@
                 }
             },
             "type": "primitive",
-            "class": "Dzangocart\\Client\\Command\\GetCategoryCommand"
+            "class": "Dzangocart\\Client\\Command\\SetCategoryCommand"
         },
         "getPayments": {
             "httpMethod": "GET",
