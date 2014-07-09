@@ -287,6 +287,25 @@
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetCatalogueCommand"
         },
+        "updateCategory": {
+            "httpMethod": "POST",
+            "uri": "category/update",
+            "parameters": {
+                "id": {
+                    "type": ["integer", "string"],
+                    "required": false,
+                    "location": "query"
+                },
+                "name": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetCategoryCommand"
+        },
         "getPayments": {
             "httpMethod": "GET",
             "uri": "payments",
