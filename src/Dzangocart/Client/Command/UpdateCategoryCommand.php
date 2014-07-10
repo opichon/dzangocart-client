@@ -2,7 +2,7 @@
 
 namespace Dzangocart\Client\Command;
 
-class SetCategoryCommand extends AbstractCommand
+class UpdateCategoryCommand extends AbstractCommand
 {
     /**
      * {@inheritdoc}
@@ -16,6 +16,13 @@ class SetCategoryCommand extends AbstractCommand
 
     protected function process()
     {
+        parent::process();
+
+        $config = $this->getResponse();
+
+        echo "inside client" . "<br>";
+        echo "<pre>";
+        print_r($config);
 
     }
 }
