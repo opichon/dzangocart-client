@@ -295,6 +295,11 @@
                     "type": ["integer", "string"],
                     "required": false,
                     "location": "query"
+                },
+                "name": {
+                    "type": ["string"],
+                    "required": false,
+                    "location": "query"
                 }
             },
             "type": "primitive",
