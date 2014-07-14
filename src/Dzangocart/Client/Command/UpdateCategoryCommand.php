@@ -10,7 +10,7 @@ class UpdateCategoryCommand extends AbstractCommand
     protected function build()
     {
         parent::build();
-        
+
         $this->set('command.response_processing', 'raw');
     }
 }

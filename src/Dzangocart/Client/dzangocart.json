@@ -289,17 +289,17 @@
         },
         "updateCategory": {
             "httpMethod": "POST",
-            "uri": "category/update",
+            "uri": "category/update/{id}",
             "parameters": {
                 "id": {
                     "type": ["integer", "string"],
                     "required": false,
-                    "location": "query"
+                    "location": "uri"
                 },
                 "name": {
                     "type": ["string"],
                     "required": false,
-                    "location": "query"
+                    "location": "postField"
                 }
             },
             "type": "primitive",
