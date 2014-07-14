@@ -300,6 +300,11 @@
                     "type": ["string"],
                     "required": false,
                     "location": "postField"
+                },
+                "code": {
+                    "type": ["string"],
+                    "required": false,
+                    "location": "postField"
                 }
             },
             "type": "primitive",
