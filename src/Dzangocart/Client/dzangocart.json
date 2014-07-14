@@ -289,7 +289,7 @@
         },
         "updateCategory": {
             "httpMethod": "POST",
-            "uri": "category/update/{id}",
+            "uri": "category/{id}/update",
             "parameters": {
                 "id": {
                     "type": ["integer", "string"],
