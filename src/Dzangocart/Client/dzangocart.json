@@ -299,12 +299,14 @@
                 "name": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField"
+                    "location": "postField",
+                    "sentAs": "category[name]"
                 },
                 "code": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField"
+                    "location": "postField",
+                    "sentAs": "category[code]"
                 }
             },
             "type": "primitive",
