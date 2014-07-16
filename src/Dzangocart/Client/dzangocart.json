@@ -220,7 +220,7 @@
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetSipsCommand"
         },
-        "getDirectPayments": {
+        "getPOTransactions": {
             "httpMethod": "GET",
             "uri": "po",
             "parameters": {
@@ -263,10 +263,28 @@
                     "required": true,
                     "default": false,
                     "location": "query"
+                },
+                "order_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "bank" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "cheque" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
                 }
             },
             "type": "primitive",
-            "class": "Dzangocart\\Client\\Command\\GetDirectPaymentsCommand"
+            "class": "Dzangocart\\Client\\Command\\GetPOTransactionsCommand"
         },
         "getCategory": {
             "httpMethod": "GET",
