@@ -58,6 +58,12 @@
                     "required": true,
                     "default": false,
                     "location": "query"
+                },
+                "order_id": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
                 }
             },
             "type" : "primitive",
@@ -160,6 +166,12 @@
                     "type": ["boolean", "integer", "string"],
                     "required": false,
                     "default": false,
+                    "location": "query"
+                },
+                "order_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
                     "location": "query"
                 }
             },
@@ -370,6 +382,24 @@
                     "type": ["boolean", "integer", "string"],
                     "required": true,
                     "default": false,
+                    "location": "query"
+                },
+                "order_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "service_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "status" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
                     "location": "query"
                 }
             },
