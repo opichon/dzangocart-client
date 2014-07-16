@@ -58,6 +58,12 @@
                     "required": true,
                     "default": false,
                     "location": "query"
+                },
+                "order_id": {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
                 }
             },
             "type" : "primitive",
@@ -161,6 +167,12 @@
                     "required": false,
                     "default": false,
                     "location": "query"
+                },
+                "order_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
                 }
             },
             "type": "primitive",
@@ -220,9 +232,9 @@
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetSipsCommand"
         },
-        "getDirectPayments": {
+        "getPOTransactions": {
             "httpMethod": "GET",
-            "uri": "payments/direct",
+            "uri": "po",
             "parameters": {
                 "date_from": {
                     "type": "string",
@@ -263,10 +275,28 @@
                     "required": true,
                     "default": false,
                     "location": "query"
+                },
+                "order_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "bank" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "cheque" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
                 }
             },
             "type": "primitive",
-            "class": "Dzangocart\\Client\\Command\\GetDirectPaymentsCommand"
+            "class": "Dzangocart\\Client\\Command\\GetPOTransactionsCommand"
         },
         "getCategory": {
             "httpMethod": "GET",
@@ -354,6 +384,24 @@
                     "type": ["boolean", "integer", "string"],
                     "required": true,
                     "default": false,
+                    "location": "query"
+                },
+                "order_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "service_id" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "status" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
                     "location": "query"
                 }
             },

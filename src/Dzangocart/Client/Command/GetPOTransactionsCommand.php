@@ -2,7 +2,7 @@
 
 namespace Dzangocart\Client\Command;
 
-class GetDirectPaymentsCommand extends AbstractCommand
+class GetPOTransactionsCommand extends AbstractCommand
 {
     /**
      * {@inheritdoc}
