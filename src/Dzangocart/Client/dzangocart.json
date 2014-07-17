@@ -337,6 +337,60 @@
                     "required": false,
                     "location": "postField",
                     "sentAs": "category[code]"
+                },
+                "suffix": {
+                    "type": ["string"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[suffix]"
+                },
+                "price": {
+                    "type": ["string"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[price]"
+                },
+                "minQuantity": {
+                    "type": ["string"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[minQuantity]"
+                },
+                "maxQuantity": {
+                    "type": ["string"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[maxQuantity]"
+                },
+                "taxIncluded": {
+                    "type": ["boolean", "integer"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[taxIncluded]"
+                },
+                "export": {
+                    "type": ["boolean", "integer"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[export]"
+                },
+                "shipping": {
+                    "type": ["boolean", "integer"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[shipping]"
+                },
+                "download": {
+                    "type": ["boolean", "integer"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[download]"
+                },
+                "pack": {
+                    "type": ["boolean", "integer"],
+                    "required": false,
+                    "location": "postField",
+                    "sentAs": "category[pack]"
                 }
             },
             "type": "primitive",
