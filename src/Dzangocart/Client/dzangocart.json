@@ -329,68 +329,57 @@
                 "name": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[name]"
+                    "location": "postField"
                 },
                 "code": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[code]"
+                    "location": "postField"
                 },
                 "suffix": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[suffix]"
+                    "location": "postField"
                 },
                 "price": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[price]"
+                    "location": "postField"
                 },
                 "minQuantity": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[minQuantity]"
+                    "location": "postField"
                 },
                 "maxQuantity": {
                     "type": ["string"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[maxQuantity]"
+                    "location": "postField"
                 },
                 "taxIncluded": {
                     "type": ["boolean", "integer"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[taxIncluded]"
+                    "location": "postField"
                 },
                 "export": {
                     "type": ["boolean", "integer"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[export]"
+                    "location": "postField"
                 },
                 "shipping": {
                     "type": ["boolean", "integer"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[shipping]"
+                    "location": "postField"
                 },
                 "download": {
                     "type": ["boolean", "integer"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[download]"
+                    "location": "postField"
                 },
                 "pack": {
                     "type": ["boolean", "integer"],
                     "required": false,
-                    "location": "postField",
-                    "sentAs": "category[pack]"
+                    "location": "postField"
                 }
             },
             "type": "primitive",
