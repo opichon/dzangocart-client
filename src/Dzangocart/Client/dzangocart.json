@@ -450,6 +450,12 @@
             },
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetPaymentsCommand"
+        },
+        "getService": {
+            "httpMethod": "GET",
+            "uri": "service",
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetServiceCommand"
         }
     }
 }
