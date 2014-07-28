@@ -450,6 +450,50 @@
             },
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetPaymentsCommand"
+        },
+        "getCustomers": {
+            "httpMethod": "GET",
+            "uri": "customers",
+            "parameters": {
+                "length" : {
+                    "type": "string",
+                    "required": false,
+                    "default": 50,
+                    "location": "query"
+                },
+                "start" : {
+                    "type": "string",
+                    "required": false,
+                    "default": 0,
+                    "location": "query"
+                },
+                "sort_by" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "gender" : {
+                    "type": ["boolean", "integer", "string"],
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "name" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                },
+                "email" : {
+                    "type": "string",
+                    "required": false,
+                    "default": null,
+                    "location": "query"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetCustomersCommand"
         }
     }
 }
