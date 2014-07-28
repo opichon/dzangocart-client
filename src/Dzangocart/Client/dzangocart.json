@@ -479,7 +479,7 @@
                     "default": null,
                     "location": "query"
                 },
-                "name" : {
+                "customer" : {
                     "type": "string",
                     "required": false,
                     "default": null,
