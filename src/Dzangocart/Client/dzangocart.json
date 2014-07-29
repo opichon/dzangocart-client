@@ -494,6 +494,19 @@
             },
             "type": "primitive",
             "class": "Dzangocart\\Client\\Command\\GetCustomersCommand"
+        },
+        "getCustomer": {
+            "httpMethod": "GET",
+            "uri": "customer/{id}",
+            "parameters": {
+                "id": {
+                    "type": ["integer", "string"],
+                    "required": true,
+                    "location": "uri"
+                }
+            },
+            "type": "primitive",
+            "class": "Dzangocart\\Client\\Command\\GetCustomerCommand"
         }
     }
 }
