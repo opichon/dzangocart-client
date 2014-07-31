@@ -435,7 +435,7 @@
                     "default": null,
                     "location": "query"
                 },
-                "service_id" : {
+                "gateway_id" : {
                     "type": "string",
                     "required": false,
                     "default": null,
