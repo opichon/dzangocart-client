@@ -4,39 +4,44 @@ namespace Dzangocart\OM;
 
 class Address extends DzangocartObject
 {
-    public function getLine1()
+    public function getStreet()
     {
-        return $this->data['line1'];
+        return $this->data['street'];
     }
 
-    public function getLine2()
+    public function getComplement()
     {
-        return $this->data['line2'];
+        return $this->data['complement'];
     }
 
-    public function getZip()
+    public function getPostalCode()
     {
-        return $this->data['zip'];
+        return $this->data['postal_code'];
     }
 
-    public function getCity()
+    public function getLocality()
     {
-        return $this->data['city'];
+        return $this->data['locality'];
     }
 
-    public function getCountry()
+    public function getRegion()
     {
-        return $this->data['country'];
+        return $this->data['region'];
+    }
+
+    public function getCountryId()
+    {
+        return $this->data['country_id'];
     }
 
     public function getLines()
     {
-        $lines = array($this->getLine1());
-        if ($line2 = $this->getLine2()) {
+        $lines = array($this->getStreet());
+        if ($line2 = $this->getComplement()) {
             $lines[] = $line2;
         }
         $lines[] = $this->getCityLine();
-        $lines[] = $this->getCountry();
+        $lines[] = $this->getCountryId();
 
         return $lines;
     }
@@ -48,6 +53,6 @@ class Address extends DzangocartObject
 
     protected function getCityLine()
     {
-        return implode(' ', array($this->getZip(), $this->getCity()));
+        return implode(' ', array($this->getPostalCode(), $this->getLocality()));
     }
 }
