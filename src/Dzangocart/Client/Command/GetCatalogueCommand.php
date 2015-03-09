@@ -12,5 +12,4 @@ class GetCatalogueCommand extends AbstractCommand
         parent::build();
         $this->set('command.response_processing', 'raw');
     }
-
 }
